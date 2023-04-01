@@ -1,3 +1,4 @@
+/*calculating variance and variance percentage(Pct)for the given sales of different products*/
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

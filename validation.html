@@ -1,0 +1,19 @@
+<html>
+<script>
+function validateEmail() {
+    var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
+      var address = document.getElementById('Email').value;
+      var len=address.length;
+      if (reg.test(address) == false || len<25) {
+      alert("Email not valid");
+      return false
+    }
+return true
+  }
+</script>
+  <form id="personalInfo">
+    <h2>Email: </h2>
+    <input type="text" name="Email" id="Email">
+  </form>
+  <input type="button" onclick="validateEmail()" value="Submit">
+</html>
